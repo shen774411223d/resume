@@ -1,0 +1,93 @@
+
+body, ul, ol, p {
+    margin: 0;
+    padding: 0;
+}
+
+.no-boder {
+    border: none !important;
+} 
+
+.fw {
+    font-weight: 800;
+    text-decoration: underline;
+    padding: 0 5px;
+}
+
+.block {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.block-item {
+    padding: 16px 0;
+}
+
+.block-line {
+    border-bottom: 2px solid grey;
+}
+
+.title h1 {
+    margin: 0  0 12px;
+}
+
+.person-phone {
+    border-left: 1px solid grey;
+    padding-left: 5px;
+}
+
+.skill {
+    display: flex;
+}
+
+.intro {
+    width: 15%;
+    font-size: 14px;
+}
+
+.skill-item {
+    width: 85%;
+}
+
+.skill-item h3 {
+    color: rgb(135, 135, 135);
+    margin: 12px 0;
+}
+
+.skill-list {
+    padding-left: 36px;
+}
+
+.skill-list li {
+    line-height: 2;
+    list-style: circle;
+}
+
+.skill-item > div {
+    line-height: 2;
+}
+
+.company {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company p:first-child {
+    font-weight: 800;
+}
+
+.info {
+    color: rgb(135, 135, 135);
+    padding-left: 16px;
+}
+
+.info span {
+    color: grey;
+    font-weight: 800;
+}
+
+.company-item > div {
+    padding: 16px 0;
+    border-bottom: 1px dashed grey;
+}
