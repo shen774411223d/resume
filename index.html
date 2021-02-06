@@ -11,11 +11,11 @@
     <div class="block">
         <div class="title block-line block-item">
             <h1>申啸天</h1>
-            <div class="person-info">
+            <div>
                 <span>邮箱：13303309012@163.com</span>
                 <span class="person-phone">电话：+13303309012</span>
             </div>
-            <div class="person-info fw">
+            <div class="person-tag">
                 个人标签：Vue，React，小程序
             </div>
         </div>
@@ -30,21 +30,18 @@
                 <div>
                     <p>前端：</p>
                     <ul class="skill-list">
-                        <li>Vue:掌握框架实现原理（可⽤ defineProperty,Proxy实现MVVM）</li>
-                        <li>React:熟练掌握JSX语法和HOC思想，熟练React Hooks，Redux</li>
-                        <li>⼩程序: 熟练掌握Flex+rpx布局；掌握小程序规范；熟悉微信和支付宝生态圈，云服务</li>
-                        <li>掌握ES6；熟练使⽤新语法新特性</li>
-                        <li>掌握常用开发模式，两链一包</li>
+                        <li>Vue:掌握框架实现原理（会使用 defineProperty,Proxy实现MVVM）</li>
+                        <li>React:掌握Redux/createElement实现原理，熟悉hooks运作机制。</li>
+                        <li>熟练使用umi，了解umi运行机制。通过umi实现项目的多环境 多配置部署。熟悉插件机制</li>
+                        <li>⼩程序: 熟练掌握Flex+rpx布局；掌握小程序规范；熟悉微信和支付宝生态圈</li>
+                        <li>项目中全面使用ES6；会利用闭包、函数式理念封装工具函数；掌握常用开发模式</li>
                     </ul>
                 </div>
                 <div>
-                    后端: Koa2, Express
-                </div>
-                <div>
-                    数据库: MongoDB
-                </div>
-                <div>
-                    ⼯具: VS Code, Git
+                    <p>其他：</p>
+                    <ul class="skill-list">
+                        <li>了解Koa2, Express。做过一段时间前后端中间层角色</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -55,8 +52,20 @@
             <div class="skill-item">
                 <div>
                     <div class="company">
+                        <p>北京洋葱学院</p>
+                        <p>2019-09 ~ 至今</p>
+                    </div>
+                    <ul class="skill-list">
+                        <li>负责小学部落增长侧前端开发，以及项目的重构工作</li>
+                        <li>负责内部submodule维护，ui组件的开发</li>
+                        <li>参与小学部落中后台开发（crm/admin）</li>
+                        <li>参与小学学习体验开发（学生学习做题/老师批改一体的项目）</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="company">
                         <p>噼里啪智能·财税(北京爱康鼎科技有限公司)</p>
-                        <p>2019-04 ~ 至今</p>
+                        <p>2019-04 ~ 2019-09</p>
                     </div>
                     <ul class="skill-list">
                         <li>在乐猩电商小镇项目中作为前端负责人，有一定的管理项目经验</li>
@@ -68,22 +77,12 @@
                 <div>
                     <div class="company">
                         <p>北京三节课</p>
-                        <p>2018-05 ~ 2019-04</p>
+                        <p>2017-06 ~ 2019-04</p>
                     </div>
                     <ul class="skill-list">
                         <li>负责公司⼩程序端开发和项目底层架构搭建</li>
                         <li>参与公司其他业务线产品研发</li>
                         <li>负责产品前端开发</li>
-                    </ul>
-                </div>
-                <div>
-                    <div class="company">
-                        <p>紫光美⾷云(北京)信息服务有限公司</p>
-                        <p>2017年初 ~ 2018-05</p>
-                    </div>
-                    <ul class="skill-list">
-                        <li>负责产品前端开发和页⾯编写</li>
-                        <li>与后端交互完成页⾯数据渲染</li>
                     </ul>
                 </div>
             </div>
@@ -95,7 +94,48 @@
             <div class="skill-item company-item">
                 <div>
                     <div class="company">
-                        <p>1.乐猩电商小镇(H5端和小程序端)</p>
+                        <p>1.洋葱小学增长侧h5</p>
+                    </div>
+                    <div class="info">
+                        <span>介绍：</span>
+                        <p><a target="_block" href="https://yangcong345.com/pg/s?sellId=12">线上地址：yangcong345.com</a></p>
+                        <p>增长h5是小学对外投放/营收的入口。负责小学业务的营收</p>
+                        <p>2020年 小学业务增长营收2000W+。实现盈亏自负</p>
+                        <p>有两大投放方式：依托洋葱APP 作为其中一个入口；浏览器h5投放</p>
+                        <p>服务运行良好，截止目前Google GA统计到的users为314.3K。sentry统计到的bug在150左右</p>
+                    </div>
+                    <ul class="skill-list">
+                        <li>使用umi.js开发。首页使用了webp+layzLoad来保证首屏加载时间</li>
+                        <li>使用代理者模式，将Local用proxy代理。便捷操作Local对象</li>
+                        <li>重写了umi中的ts类型，解决了umi.js中dispatch和其他定义难用的情况</li>
+                        <li>创建history插件，在start时注入项目。解决umi3不支持promtp的问题</li>
+                        <li>基于umi-request封装了加解密、自动处理token失效、后端status返回异常时的处理逻辑</li>
+                        <li>基于umi wrapper/hooks 做了鉴权，登录，微信授权的HOC</li>
+                        <li>全平台埋点统一方案，根据所运行的容器来判断使用js增强还是接口发送</li>
+                        <li>submodule+可视化方案。将产品需要的功能封装成组件，在后台配置好组件的props和顺序后渲染在h5 减少产研需求量</li>
+                        <li>context+useReducer/redux覆盖了项目所有数据存储的场景</li>
+                        <li>使用env+git CI做多环境同时部署</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="company">
+                        <p>2.洋葱小学运营中后台项目</p>
+                    </div>
+                    <div class="info">
+                        <span>介绍：</span>
+                        <p>小学的中后台项目覆盖了运营老师所有的工作场景：购买流程追踪、破冰、日报/宽表、批改作业</p>
+                    </div>
+                    <ul class="skill-list">
+                        <li>可视化方案：使用react-dnd来做拖拽使组件排序</li>
+                        <li>组件展示，使用submodule创建子模块做到 中后台和h5公用一个组件库</li>
+                        <li>在后台编辑方面，采用了装饰器的思想，在装饰器内埋了钩子。当相应组件被import时 装饰器会获取到相应组件信息并传递给store</li>
+                        <li>利用katex渲染后端传递的html。根据题型id选择对应组件</li>
+                        <li>使用fabric canvas库来渲染img。并利用canvas的api做到翻转/绘制图形。并最后输出一张批改后的照片</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="company">
+                        <p>3.乐猩电商小镇(H5端和小程序端)</p>
                     </div>
                     <div class="info">
                         <span>介绍：</span>
@@ -117,47 +157,6 @@
                         <li>封装fetch函数，统一处理请求回调</li>
                         <li>小程序端支付使用web-view和H5使用同一套接口。环境判断是否为小程序端，通过PostMessage传递消息</li>
                         <li>服务端使用淘宝聚石塔业务和小程序云服务（鉴权，userInfo等API必须使用云）</li>
-                    </ul>
-                </div>
-                <div>
-                    <div class="company">
-                        <p>2.CRM管理系统</p>
-                    </div>
-                    <div class="info">
-                        <span>介绍：</span>
-                        <p>CRM管理系统，自定义公司官网模块展示和活动上架等功能</p>
-                    </div>
-                    <ul class="skill-list">
-                        <li>使用<span class="fw">React</span>全家桶开发</li>
-                        <li>创建权限和顶部加载条高阶组件，可返回带权限判断和加载条页面</li>
-                        <li>使用动态import和await关键字创建按需加载函数</li>
-                        <li>开发中能灵活使用Redux，Context来统一管理state</li>
-                        <li>在业务开发中使用了React Hooks。使函数式组件也拥有了state和setState能力</li>
-                        <li>在axios拦截器⾥调⽤存在Redux里的loading实例实现请求loading</li>
-                        <li>使⽤Proxy API来实现观察者</li>
-                        <li>React-quill富⽂本编辑器</li>
-                        <li>在quill内使⽤Antd.Upload组件来实现富⽂本图⽚上传阿里OSS</li>
-                    </ul>
-                </div>
-                <div>
-                    <div class="company">
-                        <p>3.美食云商户后台</p>
-                    </div>
-                    <div class="info">
-                        <span>介绍：</span>
-                        <p>餐饮前台点餐客户端对接的后台管理系统。涉及人员，库存管理和财务报表</p>
-                    </div>
-                    <ul class="skill-list">
-                        <li>运用<span class="fw">Vue</span>全家桶开发单页面应用</li>
-                        <li>使用Ele-ui进行页面搭建和样式风格统一，实现业务代码</li>
-                        <li>使用H5拖拽使页面菜品可以拖拽映射组合</li>
-                        <li>Vuex状态管理，使组件数据无缝交互</li>
-                        <li>将fetch接口提取到统一文件，方便管理并在不同文件按需引入</li>
-                        <li>使用axios拦截器判断token是否过期和重新登陆逻辑</li>
-                        <li>将权限数据通过mixins共享</li>
-                        <li>使用websocket建立连接，请求第三方外卖平台</li>
-                        <li>商品库存出入库（props+$emit）</li>
-                        <li>菜品小票设置打印模板（render+jsx）</li>
                     </ul>
                 </div>
                 <div>
@@ -187,7 +186,6 @@
                         <span>介绍：</span>
                         <p><a target="_block" href="https://sanjieke.cn">线上地址：sanjieke.cn</a></p>
                         <p>学币功能是三节课推出的虚拟货币，用户通过充值学币来达到购买课程或其他消费</p>
-                        <p>学币是独立的支付系统，独立于其他项目</p>
                     </div>
                     <ul class="skill-list">
                         <li>使用<span class="fw">Vue</span>生态</li>

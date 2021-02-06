@@ -8,6 +8,12 @@ body, ul, ol, p {
     border: none !important;
 } 
 
+.person-tag {
+    padding: 5px 0;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
 .fw {
     font-weight: 800;
     text-decoration: underline;
