@@ -108,8 +108,35 @@
         <div class="intro">项目经验</div>
         <div class="skill-item company-item">
           <div>
+            <div class="company"><p>1. 印花猫管理后台</p></div>
+            <div class="info">
+              <span
+                >介绍：搜索印花猫小程序，印花猫服务的管理后台帮助运营管理订单以及商品</span
+              >
+            </div>
+            <ul class="skill-list">
+              <li>
+                基于Vue3和微前端生态思想，将整个管理后台分成两个项目，登录、菜单、权限和业务逻辑拆分
+              </li>
+              <li>
+                外层登录、菜单通过iframe嵌套内层业务逻辑，两者通过postmessage实现通信方案
+              </li>
+              <li>
+                在内侧业务逻辑项目监听路由行为，当发生路由行为时通知外层，保证两个项目交互保持一致
+              </li>
+              <li>
+                使用vite
+                proxy代理访问路径。解决往常需要本地运行两个项目的弊端，一般开发只需运行内层项目即可
+              </li>
+              <li>
+                通过自定义指令管理权限，通常在按钮上添加v-perssion.add.remove
+                即可添加权限实现按钮的禁用 也可扩展更多html属性的控制
+              </li>
+            </ul>
+          </div>
+          <div>
             <div class="company">
-              <p>1.腾讯新基石ssv</p>
+              <p>2.腾讯新基石ssv</p>
             </div>
             <div class="info">
               <span>介绍：</span>
@@ -148,7 +175,7 @@
 
           <div>
             <div class="company">
-              <p>2.脉脉招聘商业产品</p>
+              <p>3.脉脉招聘商业产品</p>
             </div>
             <div class="info">
               <span>介绍：</span>
@@ -174,7 +201,7 @@
           </div>
           <div>
             <div class="company">
-              <p>3.技术平台</p>
+              <p>4.技术平台</p>
             </div>
             <div class="info">
               <span>介绍：</span>
@@ -200,7 +227,7 @@
           </div>
           <div>
             <div class="company">
-              <p>4.洋葱小学增长侧h5</p>
+              <p>5.洋葱小学增长侧h5</p>
             </div>
             <div class="info">
               <span>介绍：</span>
@@ -244,7 +271,7 @@
           </div>
           <div>
             <div class="company">
-              <p>5.乐猩电商小镇(H5端和小程序端)</p>
+              <p>6.乐猩电商小镇(H5端和小程序端)</p>
             </div>
             <div class="info">
               <span>介绍：</span>
@@ -291,7 +318,7 @@
           </div>
           <div>
             <div class="company">
-              <p>6.三节课校园小程序</p>
+              <p>7.三节课校园小程序</p>
             </div>
             <div class="info">
               <span>介绍：</span>
